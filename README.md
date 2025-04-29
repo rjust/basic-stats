@@ -5,10 +5,25 @@ set of numbers.
 This implementation is intended to be used in a [`git bisect` exercise](ASSIGNMENT.md).
 
 
+#### How to build Basic Statistics and run its tests from the terminal:
+
+Run these commands from the Basic Statistics root directory, which contains the *build.gradle* build file.
+
+1. Run `./gradlew compile` to compile Basic Statistics.
+
+2. Run `./gradlew build` to compile and run tests.
+
+3. Run `./gradlew clean` whenever you want to clean up the project (i.e., delete all generated files).
+You need to do this to re-run the tests, if they have already been run after the most recent code change.
+For example: `./gradlew clean build`.
+
+
 #### How to run Basic Statistics from the terminal:
 
 Run this command from the Basic Statistics root directory, which contains the
 *build.gradle* build file.
+
+Note: running the application is not required for the [`git bisect` exercise](ASSIGNMENT.md).
 
 1. `./gradlew run`
 
@@ -22,17 +37,3 @@ For Windows, use `gradlew.bat` instead of `./gradlew`.
 * Computes the mean of the set of numbers.
 * Computes the median of the set of numbers.
 * Computes the mode of the set of numbers.
-
-
-#### How to build Basic Statistics and run its tests from the terminal:
-
-Run these commands from the Basic Statistics root directory, which contains the *build.gradle* build file.
-
-1. Run `./gradlew compile` to compile Basic Statistics.
-
-2. Run `./gradlew build` to compile and run tests.
-
-3. Run `./gradlew clean` whenever you want to clean up the project (i.e., delete all generated files).
-You need to do this to re-run the tests, if they have already been run after the most recent code change.
-For example: `./gradlew clean build`.
-
