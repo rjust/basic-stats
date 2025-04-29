@@ -5,11 +5,11 @@ The goal of this exercise is to improve git proficiency and to learn about syste
 
 
 ## Setup
-1. Make sure
+* Make sure
 a **[Java 17 or 21 JDK](https://www.oracle.com/java/technologies/downloads/)**
-and **[Git](https://git-scm.com/) is installed**.
+and **[Git](https://git-scm.com/) are installed**.
 
-2. Not required, but strongly recommended:  [practice resolving a merge conflict](https://rawgit.com/mernst/git-conflict-tutorial/master/git-conflict-resolution.html).
+* Not required, but strongly recommended:  [practice resolving a merge conflict](https://rawgit.com/mernst/git-conflict-tutorial/master/git-conflict-resolution.html).
 
 
 ## Background (story time)
@@ -30,26 +30,26 @@ single test run (they trusted the test command).
 
 ## Instructions
 
-3. **Checkout** the most recent commit on the *main* branch (`git checkout main`) and run: "`./gradlew clean build`".  Verify that the software is defective (meaning that running the tests should fail), but the command `./gradlew clean build` succeeds!
+1. **Checkout** the most recent commit on the *main* branch (`git checkout main`) and run: "`./gradlew clean build`".  Verify that the software is defective (meaning that running the tests should fail), but the command `./gradlew clean build` succeeds!
 
-4. Figure out why the command `./gradlew clean build` succeeds even though the
+2. Figure out why the command `./gradlew clean build` succeeds even though the
 tests fail, and **fix it**.  That is, ensure that `./gradlew clean build` fails
 (terminates with non-zero exit status) if and only if the tests fail.
 Hint 1: run "`./gradlew clean build; echo $?`" which prints the exit status of the *gradle* process.
 Hint 2: file `build.gradle` is the configuration file for the Gradle build system.
 
-5. **Check out the commit with tag *v1.0.0*** (`git checkout v1.0.0`), and compile and test the application again.  **All tests pass** on this revision.  If that is not the case, you have done something wrong.
+3. **Check out the commit with tag *v1.0.0*** (`git checkout v1.0.0`), and compile and test the application again.  **All tests pass** on this revision.  If that is not the case, you have done something wrong.
 
-6. **Determine** the
+4. **Determine** the
 **number of commits between tag v1.0.0 and HEAD** (the latest revision on main).
 Include v1.0.0 and HEAD when counting, and note the command(s) that you used to
 **automatically** compute this number.
 
-7. Learn about the [git
+5. Learn about the [git
 bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search)
 command.
 
-8. Use `git bisect` to **manually** identify the **commit that introduced the
+6. Use `git bisect` to **manually** identify the **commit that introduced the
 defect** between version **v1.0.0** and **HEAD**.  When prompted by `git
 bisect`, you will run tests and then run `git bisect bad` or `git bisect good`,
 until `git bisect` tells you which commit introduced the defect.  Note the
@@ -57,8 +57,8 @@ commit hash and log message of the defect-inducing commit.  **Verify** that you
 **correctly identified** the defect-inducing commit.  (Hint: what properties
 must be true about that commit?)
 
-9. Automate the process using a script, so that you only need to run `git bisect
-...` once and git will output the faulty commit.
+7. Automate the process using a script, so that you only need to run `git bisect
+...` once and git will output the faulty commit (this step is optional).
 
 
 ## Questions
