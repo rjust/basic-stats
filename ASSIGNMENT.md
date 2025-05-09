@@ -26,6 +26,7 @@ The test command `./gradlew clean build` did not catch the defect.
 Since the developers were so excited about coding, they never manually checked a
 single test run (they trusted the test command).
 
+**Your goal is to identify the commit that introduced the defect.**
 
 
 ## Instructions
@@ -41,8 +42,8 @@ Hint 2: file `build.gradle` is the configuration file for the Gradle build syste
 3. **Check out the commit with tag *v1.0.0*** (`git checkout v1.0.0`), and compile and test the application again.  **All tests pass** on this revision.  If that is not the case, you have done something wrong.
 
 4. **Determine** the
-**number of commits between tag v1.0.0 and HEAD** (the latest revision on main).
-Include v1.0.0 and HEAD when counting, and note the command(s) that you used to
+**number of commits between tag v1.0.0 and the most recent commit on main**.
+Include v1.0.0 and the most recent commit when counting, and note the command(s) that you used to
 **automatically** compute this number.
 
 5. Learn about the [git
