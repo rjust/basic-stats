@@ -71,7 +71,7 @@ must be true about that commit?)
 
 4. How many commits, not including `v1.0.0` and `HEAD`, did `git bisect` analyze before finding the first failing commit? List all commands you ran; this will likely be a series of calls to `git bisect`, or a call to your script.  The course staff must be able to run these commands, by copying (once) from your document and pasting into a command shell.
 
-5. What is the best-, worst-, and average-case run-time complexity of `git bisect` to discover the defect-inducing commit? Why?
+5. What is the best-, worst-, and average-case run-time complexity of `git bisect` to determine the defect-inducing commit? Why?
 
 6. Which `git` command can you use to undo an undesirable commit?  Does this command work in your case (for the commit you identified in question 3)?  Briefly explain a problem that may occur when undoing a commit and what best practices mitigate this problem. 
 
