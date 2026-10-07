@@ -9,8 +9,6 @@ The goal of this exercise is to improve git proficiency and to learn about syste
 a **[Java 17+ JDK](https://www.oracle.com/java/technologies/downloads/)**
 and **[Git](https://git-scm.com/) are installed**.
 
-* Not required, but strongly recommended:  [practice resolving a merge conflict](https://rawgit.com/mernst/git-conflict-tutorial/master/git-conflict-resolution.html).
-
 
 ## Background (story time)
 
@@ -62,7 +60,7 @@ commit hash and log message of the defect-inducing commit.  **Verify** that you
 
 ## Questions
 
-1. Why does the automated testing infrastructure (before your fix) not catch the test failure? How did you improve it?
+1. Why does the automated testing infrastructure (before your fix) not catch the test failure? How would you improve it?
 
 2. How many commits exist between version v1.0.0 and HEAD (including v1.0.0 and HEAD)? List the command(s) that you used to **automatically** compute this number.
 
